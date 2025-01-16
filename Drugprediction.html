@@ -1,144 +1,180 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Drug Prediction Project using machine learning to predict suitable drug types based on patient health parameters.">
-    <title>Drug Prediction Project</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
-            color: #212529;
-        }
-        .container {
-            margin-top: 50px;
-        }
-        .code-block {
-            background: #f1f1f1;
-            padding: 15px;
-            border-radius: 5px;
-            font-family: monospace;
-            color: #333;
-        }
-        .nav-link {
-            color: #007bff;
-        }
-        .nav-link:hover {
-            text-decoration: underline;
-        }
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Drug Prediction Project</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#overview">Overview</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#technologies">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#steps">Steps</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#insights">Insights</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#code">Code</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Drug Prediction</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.png">
+	</head>
+	<body class="is-preload">
 
-    <div class="container">
-        <section id="overview">
-            <h1>Drug Prediction Project</h1>
-            <p>
-                This project leverages machine learning to predict the type of drug suitable for patients based on their health parameters. Key features such as age, gender, blood pressure, and cholesterol levels were used to train classification models.
-            </p>
-        </section>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-        <section id="technologies">
-            <h2>Technologies Used</h2>
-            <ul>
-                <li><strong>Python</strong>: Programming language for data analysis and modeling.</li>
-                <li><strong>Libraries</strong>:
-                    <ul>
-                        <li><strong>Pandas</strong>: Data manipulation and analysis.</li>
-                        <li><strong>NumPy</strong>: Numerical computations.</li>
-                        <li><strong>Scikit-learn</strong>: Machine learning algorithms and evaluation.</li>
-                        <li><strong>Matplotlib</strong> and <strong>Seaborn</strong>: Data visualization.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Data Science Projects</a>
+					</header>
 
-        <section id="steps">
-            <h2>Steps in the Project</h2>
-            <ol>
-                <li><strong>Data Cleaning:</strong> Handled missing values and encoded categorical variables.</li>
-                <li><strong>Exploratory Data Analysis (EDA):</strong> Visualized relationships between variables.</li>
-                <li><strong>Feature Engineering:</strong> Selected important features influencing drug classification.</li>
-                <li><strong>Model Training:</strong> Implemented Logistic Regression, Random Forest, and SVM models.</li>
-                <li><strong>Evaluation:</strong> Compared model performance using accuracy and precision metrics.</li>
-            </ol>
-        </section>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="profile.html">Profile</a></li>
+						</ul>
+					
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/darius-bell/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							
+							<li><a href="https://github.com/dlbmoney92/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
 
-        <section id="insights">
-            <h2>Key Insights</h2>
-            <ul>
-                <li>Blood pressure and cholesterol levels were significant predictors of drug classification.</li>
-                <li>Random Forest achieved the highest accuracy among tested models.</li>
-            </ul>
-        </section>
+				<!-- Main -->
+					<div id="main">
 
-        <section id="code">
-            <h2>Example Code</h2>
-            <div class="code-block">
-<pre>
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1>Sleep Drug Prediction<br />
+									</h1>
+								</header>
+								<div class="image main"><img src="https://camo.githubusercontent.com/574a11de5c3ac0ed57a32533eac7a647ab86b465ea03eea2510686c760b53b89/68747470733a2f2f696d616765732e6f6e6c796d796865616c74682e636f6d2f696d706f727465642f696d616765732f323032312f446563656d6265722f32305f4465635f323032312f6269675f736c6565702e6a7067" alt="" /></div>
+								<p><h2>Project Overview</h2></p>
+								<p>The main objective of this data science project is to analyze various lifestyle and medical variables of individuals, such as age, BMI, physical activity, sleep duration, blood pressure, etc., and use this information to predict the occurrence and type of sleep disorder they may experience. Sleep disorders, like Insomnia and Sleep Apnea, can have significant impacts on an individual's health and overall well-being. By identifying individuals at risk of sleep disorders, appropriate interventions and treatments can be provided to improve their sleep quality and overall health.</p>
+                                <h2>About the Dataset:</h2>
+                                <p>The dataset used for this project is called the "Sleep Health and Lifestyle Dataset." It consists of 400 rows (individuals) and 13 columns (variables) that cover a wide range of information related to sleep patterns and daily habits. The dataset includes the following key features:
 
-# Load dataset
-data = pd.read_csv('drug_data.csv')
-X = data[['Age', 'Sex', 'BP', 'Cholesterol']]
-y = data['Drug']
+                                    <li>Comprehensive Sleep Metrics: This section allows exploring various sleep-related metrics such as sleep duration, quality of sleep, and factors influencing sleep patterns.</li>
+                                    
+                                    <li>Lifestyle Factors: The dataset provides insights into lifestyle factors such as physical activity levels, stress levels, and BMI categories, which may have an impact on an individual's sleep health.</li>
+                                    
+                                    <li>Cardiovascular Health: The dataset includes measurements of blood pressure and heart rate, which are crucial indicators of an individual's cardiovascular health and may have a correlation with sleep disorders.</li>
+                                    <p></p>
+                                    <h4>Sleep Disorder Analysis: The primary focus of this project is to identify the presence or absence of sleep disorders in individuals. The dataset labels individuals with three categories in the "Sleep Disorder" column:</h4>
+                                    <ol>    
+                                    <li>None: Individuals who do not exhibit any specific sleep disorder.</li>
+                                    <li>Insomnia: Individuals who experience difficulty falling asleep or staying asleep, leading to inadequate or poor-quality sleep.</li>
+                                    <li>Sleep Apnea: Individuals who suffer from pauses in breathing during sleep, resulting in disrupted sleep patterns and potential health risks.</li>
+                                    </ol>
+                                </p>
+                                <h2>Data Dictionary</h2>
+                                <table>
+                                    <thead>
+                                    <tr>
+                                      <th>Column Name</th>
+                                      <th>Description</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                      <td>Person_ID</td>
+                                      <td>Unique ID assigned to each person</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Gender</td>
+                                      <td>The gender of the person (Male/Female)</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Age</td>
+                                      <td>Age of the person in years</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Occupation</td>
+                                      <td>The occupation of the person</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Sleep_duration</td>
+                                      <td>The duration of sleep of the person in hours</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Quality_of_sleep</td>
+                                      <td>A subjective rating of the quality of sleep, ranging from 1 to 10</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Physical_activity</td>
+                                      <td>The level of physical activity of the person (Low/Medium/High)</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Stress Level</td>
+                                      <td>A subjective rating of the stress level, ranging from 1 to 10</td>
+                                    </tr>
+                                    <tr>
+                                      <td>BMI_category</td>
+                                      <td>The BMI category of the person (Underweight/Normal/Overweight/Obesity)</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Blood_pressure</td>
+                                      <td>The blood pressure of the person in mmHg</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Heart_rate</td>
+                                      <td>The heart rate of the person in beats per minute</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Daily Steps</td>
+                                      <td>The number of steps taken by the person per day</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Sleep_disorder</td>
+                                      <td>The presence or absence of a sleep disorder in the person (None, Insomnia, Sleep Apnea)</td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+								<h2>Impact</h2>
+								<p>By undertaking this data science project, we aim to provide valuable insights into the factors influencing sleep disorders and develop a model that can help identify individuals at risk, thus promoting better sleep health and overall well-being.</p>
+								<a href="notebook/Sleep Disorder Prediction.html" class="button">View Notebook</a>
+								<a href="https://github.com/SUKHMAN-SINGH-1612/Data-Science-Projects/blob/main/Sleep%20Disorder%20Prediction/Sleep_health_and_lifestyle_dataset.csv" class="button">Download Dataset</a>
+                            </section>
 
-# Split data
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+					</div>
 
-# Train model
-model = RandomForestClassifier()
-model.fit(X_train, y_train)
+			<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Get in Touch</h2>
+						<section class="split contact">
+							
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:dairuslbell92@gmail.com">dariuslbell92@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/darius-bell/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
 
-# Predict and evaluate
-y_pred = model.predict(X_test)
-print(f'Accuracy: {accuracy_score(y_test, y_pred):.2f}')
-</pre>
-            </div>
-        </section>
-    </div>
+									
+									<li><a href="https://github.com/dlbmoney92/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
 
-    <footer>
-        <p>Explore the full project on <a href="https://github.com/dlbmoney92/Coding-Projects/blob/main/Drug_Prediction_project.ipynb" target="_blank">GitHub</a>.</p>
-        <p>&copy; 2025 Bell Contracting Services LLC</p>
-    </footer>
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Darius Bell</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+			</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
