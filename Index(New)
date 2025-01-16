@@ -41,9 +41,9 @@
 						</ul>
 					
 						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/sukhmansingh1612/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://www.instagram.com/sukhmansingh_1612/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/SUKHMAN-SINGH-1612" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/darius-bell/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							
+							<li><a href="https://github.com/dlbmoney92/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
@@ -51,7 +51,18 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-							
+														<article class="post featured">
+								<header class="major">
+									
+									<h2><a href="#">SpaceX Landing prediction<br />
+									</a></h2>
+									<p>In this project I collected data from SpaceX launches using a variety of sources such as the API, webscraping and data wrangling which where then cleaned. The data was then organized and defined then machine learning models ( Logistic Regression, Support Vector Machine, Decision Tree and K Nearest Neighbors) where used to predict the optimal launch site.</p>
+								</header>
+								<a href="https://github.com/dlbmoney92/SpaceX-Capstone/tree/main" class="image main"><img src="Launch.gif" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://github.com/dlbmoney92/SpaceX-Capstone/tree/main" class="button large">View Project</a></li>
+								</ul>
+							</article>
 
 						<!-- Posts -->
 							<section class="posts">
@@ -163,7 +174,7 @@
 									<li><a href="https://www.linkedin.com/in/darius-bell/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
 
 									
-									<li><a href="https://https://github.com/dlbmoney92/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://github.com/dlbmoney92/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
