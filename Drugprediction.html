@@ -1,136 +1,115 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Drug Prediction</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.png">
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Drug Prediction Project</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.png">
+    </head>
+    <body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <!-- Wrapper -->
+        <div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Data Science Projects</a>
-					</header>
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo">Data Science Projects</a>
+            </header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="profile.html">Profile</a></li>
-						</ul>
-					
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/darius-bell/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							
-							<li><a href="https://github.com/dlbmoney92/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+            <!-- Nav -->
+            <nav id="nav">
+                <ul class="links">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/darius-bell/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/dlbmoney92/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </nav>
 
-				<!-- Main -->
-					<div id="main">
+            <!-- Main -->
+            <div id="main">
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									
-									<h1>Drug Prediction<br />
-									</h1>
-								</header>
-								<div class="image main"><img src="512px-Blood_pressure_monitoring.jpg" alt="" /></div>
-								<p><h2>Project Overview</h2></p>
-								<p>
-                This project utilizes machine learning techniques to predict the presence of heart disease in patients based on health parameters such as age, gender, cholesterol levels, and more. The goal is to provide a predictive model that aids in early diagnosis and better treatment planning.
-            </p>
-                                <h2>About the Dataset:</h2>
-                                <p>The dataset used in this project contains various health-related metrics, including:</p>
-            <ul>
-                <li><strong>Age:</strong> Patient age in years.</li>
-                <li><strong>Sex:</strong> Gender of the patient (1 = male, 0 = female).</li>
-                <li><strong>Chest Pain Type:</strong> Type of chest pain experienced (e.g., typical angina, atypical angina).</li>
-                <li><strong>Resting Blood Pressure:</strong> Resting blood pressure in mmHg.</li>
-                <li><strong>Cholesterol:</strong> Serum cholesterol in mg/dL.</li>
-                <li><strong>Fasting Blood Sugar:</strong> Fasting blood sugar > 120 mg/dL (1 = true, 0 = false).</li>
-                <li><strong>Maximum Heart Rate Achieved:</strong> Maximum heart rate achieved during exercise.</li>
-                <li><strong>Exercise Induced Angina:</strong> Presence of exercise-induced angina (1 = yes, 0 = no).</li>
-            </ul>
-                                </p>
-                              
-								<h2>Steps in the Project</h2>
-            <ol>
-                <li><strong>Data Cleaning:</strong> Handled missing values and standardized numerical features.</li>
-                <li><strong>Exploratory Data Analysis (EDA):</strong> Visualized the distribution of features and their correlation with heart disease.</li>
-                <li><strong>Feature Selection:</strong> Selected the most relevant features for training the model.</li>
-                <li><strong>Model Training:</strong> Trained multiple machine learning models, including Logistic Regression, Random Forest, and XGBoost.</li>
-                <li><strong>Evaluation:</strong> Compared model performance using metrics such as accuracy, precision, recall, and F1-score.</li>
-            </ol>
-								
-								 <h2>Results</h2>
-            <p>
-                After training and testing multiple machine learning models, the following results were obtained:
-                            <li><strong>XGBoost:</strong> Performed slightly lower at 85% accuracy but offered robust feature importance analysis.</li>
-                <li><strong>Logistic Regression:</strong> Provided baseline performance with 78% accuracy.</li>
-            </ul>
-            <p>
-                These results demonstrate the effectiveness of ensemble methods like Random Forest and XGBoost in predicting heart disease. By leveraging these models, healthcare professionals can identify at-risk individuals and prioritize early intervention.
-            </p></p>
-            <ul>
-                <li><strong>Random Forest:</strong> Achieved an accuracy of 88%, making it the most effective model in this project.</li>
+                <!-- Post -->
+                <section class="post">
+                    <header class="major">
+                        <h1>Drug Prediction Project<br /></h1>
+                    </header>
+                    <div class="image main"><img src="512px-Blood_pressure_monitoring.jpg" alt="Drug Prediction Project" /></div>
+                    <h2>Project Overview</h2>
+                    <p>
+                        The Drug Prediction Project involves analyzing patient health parameters to classify the appropriate drug for treatment. Using machine learning models, the project predicts drug categories based on features like age, gender, blood pressure, cholesterol, and more.
+                    </p>
+                    <h2>About the Dataset</h2>
+                    <p>The dataset includes the following attributes:</p>
+                    <ul>
+                        <li><strong>Age:</strong> Patient's age in years.</li>
+                        <li><strong>Sex:</strong> Gender of the patient.</li>
+                        <li><strong>Blood Pressure:</strong> Categorical representation of blood pressure (Low, Normal, High).</li>
+                        <li><strong>Cholesterol:</strong> Categorical cholesterol levels (Normal, High).</li>
+                        <li><strong>Drug Type:</strong> The drug prescribed for treatment.</li>
+                    </ul>
+                    <h2>Steps in the Project</h2>
+                    <ol>
+                        <li><strong>Data Cleaning:</strong> Addressed missing values and encoded categorical variables.</li>
+                        <li><strong>Exploratory Data Analysis (EDA):</strong> Identified correlations between features and drug type.</li>
+                        <li><strong>Feature Engineering:</strong> Created meaningful features for model input.</li>
+                        <li><strong>Model Training:</strong> Implemented models such as Logistic Regression, Decision Tree, and Random Forest.</li>
+                        <li><strong>Evaluation:</strong> Assessed performance using metrics like accuracy, precision, and F1-score.</li>
+                    </ol>
+                    <h2>Results</h2>
+                    <p>
+                        The analysis produced the following insights:
+                    </p>
+                    <ul>
+                        <li><strong>Decision Tree:</strong> Achieved the best performance with an accuracy of 90%.</li>
+                        <li><strong>Logistic Regression:</strong> Delivered consistent results with an accuracy of 85%.</li>
+                        <li><strong>Feature Importance:</strong> Blood pressure and cholesterol levels were significant predictors of drug classification.</li>
+                    </ul>
+                    <a href="https://github.com/dlbmoney92/Coding-Projects/tree/main/Drug%20Prediction" class="button">View Notebook</a>
+                    <a href="https://github.com/dlbmoney92/Coding-Projects/blob/main/Drug%20Prediction/drug_classification.csv" class="button">Download Dataset</a>
+                </section>
 
-								<a href="https://github.com/dlbmoney92/Coding-Projects/tree/main/Drug%20Prediction" class="button">View Notebook</a>
-								<a href="https://github.com/dlbmoney92/Coding-Projects/blob/main/Drug%20Prediction/drug_classification.csv" class="button">Download Dataset</a>
-                            </section>
+            </div>
 
-					</div>
+            <!-- Footer -->
+            <footer id="footer">
+                <section>
+                    <h2>Get in Touch</h2>
+                </section>
+                <section class="split contact">
+                    <section>
+                        <h3>Email</h3>
+                        <p><a href="mailto:dairuslbell92@gmail.com">dariuslbell92@gmail.com</a></p>
+                    </section>
+                    <section>
+                        <h3>Social</h3>
+                        <ul class="icons alt">
+                            <li><a href="https://www.linkedin.com/in/darius-bell/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/dlbmoney92/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </section>
+                </section>
+            </footer>
 
-			<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Get in Touch</h2>
-						<section class="split contact">
-							
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:dairuslbell92@gmail.com">dariuslbell92@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/darius-bell/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+            <!-- Copyright -->
+            <div id="copyright">
+                <ul><li>&copy; Darius Bell</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+            </div>
 
-									
-									<li><a href="https://github.com/dlbmoney92/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+        </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Darius Bell</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 
-			</div>
-
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    </body>
 </html>
