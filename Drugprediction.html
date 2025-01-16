@@ -1,43 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Drug Prediction Project using machine learning to predict suitable drug types based on patient health parameters.">
+    <title>Drug Prediction Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .code-block {
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            color: #333;
+        }
+        .nav-link {
+            color: #007bff;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
 <body>
-    <div class="container">
-        <h1>Drug Prediction Project</h1>
-        <p>
-            This project aims to predict the type of drug suitable for patients based on health parameters such as 
-            age, gender, blood pressure, and cholesterol levels. The dataset used for this project is sourced 
-            from <a href="https://github.com/dlbmoney92/Coding-Projects/tree/main/Drug%20Prediction" target="_blank" class="link">this GitHub repository</a>.
-        </p>
-
-        <h2>Technologies Used</h2>
-        <ul>
-            <li><strong>Python</strong>: For data analysis and machine learning implementation.</li>
-            <li><strong>Libraries</strong>: 
-                <ul>
-                    <li>Pandas and NumPy for data manipulation and analysis.</li>
-                    <li>Scikit-learn for machine learning algorithms.</li>
-                    <li>Matplotlib and Seaborn for data visualization.</li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Drug Prediction Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#overview">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#technologies">Technologies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#steps">Steps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#insights">Insights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#code">Code</a>
+                    </li>
                 </ul>
-            </li>
-        </ul>
+            </div>
+        </div>
+    </nav>
 
-        <h2>Steps in the Project</h2>
-        <ol>
-            <li><strong>Data Cleaning:</strong> Handled missing values and encoded categorical variables.</li>
-            <li><strong>Exploratory Data Analysis (EDA):</strong> Visualized relationships between variables to uncover patterns.</li>
-            <li><strong>Feature Engineering:</strong> Selected key features influencing drug prediction.</li>
-            <li><strong>Model Training:</strong> Trained multiple machine learning models, including Logistic Regression, Random Forest, and Support Vector Machine (SVM).</li>
-            <li><strong>Evaluation:</strong> Compared model performance using accuracy, precision, and recall metrics.</li>
-        </ol>
+    <div class="container">
+        <section id="overview">
+            <h1>Drug Prediction Project</h1>
+            <p>
+                This project leverages machine learning to predict the type of drug suitable for patients based on their health parameters. Key features such as age, gender, blood pressure, and cholesterol levels were used to train classification models.
+            </p>
+        </section>
 
-        <h2>Key Insights</h2>
-        <ul>
-            <li>Blood pressure and cholesterol levels were critical factors in drug classification.</li>
-            <li>Random Forest and Decision Tree models achieved the highest accuracy among tested algorithms.</li>
-        </ul>
+        <section id="technologies">
+            <h2>Technologies Used</h2>
+            <ul>
+                <li><strong>Python</strong>: Programming language for data analysis and modeling.</li>
+                <li><strong>Libraries</strong>:
+                    <ul>
+                        <li><strong>Pandas</strong>: Data manipulation and analysis.</li>
+                        <li><strong>NumPy</strong>: Numerical computations.</li>
+                        <li><strong>Scikit-learn</strong>: Machine learning algorithms and evaluation.</li>
+                        <li><strong>Matplotlib</strong> and <strong>Seaborn</strong>: Data visualization.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-        <h2>Example Code</h2>
-        <div class="code-block">
+        <section id="steps">
+            <h2>Steps in the Project</h2>
+            <ol>
+                <li><strong>Data Cleaning:</strong> Handled missing values and encoded categorical variables.</li>
+                <li><strong>Exploratory Data Analysis (EDA):</strong> Visualized relationships between variables.</li>
+                <li><strong>Feature Engineering:</strong> Selected important features influencing drug classification.</li>
+                <li><strong>Model Training:</strong> Implemented Logistic Regression, Random Forest, and SVM models.</li>
+                <li><strong>Evaluation:</strong> Compared model performance using accuracy and precision metrics.</li>
+            </ol>
+        </section>
+
+        <section id="insights">
+            <h2>Key Insights</h2>
+            <ul>
+                <li>Blood pressure and cholesterol levels were significant predictors of drug classification.</li>
+                <li>Random Forest achieved the highest accuracy among tested models.</li>
+            </ul>
+        </section>
+
+        <section id="code">
+            <h2>Example Code</h2>
+            <div class="code-block">
 <pre>
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -59,52 +130,15 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 print(f'Accuracy: {accuracy_score(y_test, y_pred):.2f}')
 </pre>
-        </div>
-
-        <h2>Get Involved</h2>
-        <p>
-            Feel free to explore the full code and dataset on the 
-            <a href="https://github.com/dlbmoney92/Coding-Projects/blob/main/Drug_Prediction_project.ipynb" target="_blank" class="link">GitHub repository</a>.
-        </p>
+            </div>
+        </section>
     </div>
 
+    <footer>
+        <p>Explore the full project on <a href="https://github.com/dlbmoney92/Coding-Projects/blob/main/Drug_Prediction_project.ipynb" target="_blank">GitHub</a>.</p>
+        <p>&copy; 2025 Bell Contracting Services LLC</p>
+    </footer>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Get in Touch</h2>
-						<section class="split contact"></section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:Darius Bell@gmail.com">dariuslbell92@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/darius-bell/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
-
-									<li><a href="https://github.com/dlbmoney92" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Darius Bell</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-
